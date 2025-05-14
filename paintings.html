@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintings - Kenza's Art</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kenza's Art</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="drawings.html">Drawings</a>
+            <a href="paintings.html">Paintings</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <img src="images/paintings/painting1.jpg" alt="Painting 1" onclick="showDescription('This is Painting 1 description.')">
+        <img src="images/paintings/painting2.jpg" alt="Painting 2" onclick="showDescription('This is Painting 2 description.')">
+    </section>
+
+    <footer>
+        © 2025 Kenza's Art
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <div id="modal">
+        <div id="modal-content">
+            <span id="modal-close" onclick="closeModal()">&times;</span>
+            <p id="modal-content-text"></p>
+        </div>
+    </div>
+</body>
+</html>
