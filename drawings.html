@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drawings - Kenza's Art</title>
+    <title>Drawings - Art by Kenza</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        .section-box {
+            background-color: #ffffff;
+            border: 2px solid #dddddd;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .section-box img {
+            max-width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section-box img:hover {
+            border-color: #999999;
+        }
+        .back-home {
+            background-color: #333333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f8f8f8;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Kenza's Art</h1>
+        <h1>Art by Kenza</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="drawings.html">Drawings</a>
@@ -17,22 +50,35 @@
         </nav>
     </header>
 
-    <section class="gallery">
-        <img src="images/drawings/drowning Small.jpeg" alt="Drowning" onclick="showDescription('This artwork explores the sensation of drowning in thoughts.')">
-        <img src="images/drawings/flying Small.jpeg" alt="Flying" onclick="showDescription('This drawing captures the lightness and freedom of flying.')">
-        <img src="images/drawings/IMG_3922 Small.jpeg" alt="Drawing 3922" onclick="showDescription('This is the story behind Drawing 3922.')">
-        <img src="images/drawings/IMG_3923 Small.jpeg" alt="Drawing 3923" onclick="showDescription('This is the story behind Drawing 3923.')">
-        <img src="images/drawings/IMG_3924 Small.jpeg" alt="Drawing 3924" onclick="showDescription('This is the story behind Drawing 3924.')">
-        <img src="images/drawings/IMG_3925 Small.jpeg" alt="Drawing 3925" onclick="showDescription('This is the story behind Drawing 3925.')">
-        <img src="images/drawings/IMG_3926 Small.jpeg" alt="Drawing 3926" onclick="showDescription('This is the story behind Drawing 3926.')">
-        <img src="images/drawings/IMG_3927 Small.jpeg" alt="Drawing 3927" onclick="showDescription('This is the story behind Drawing 3927.')">
-        <img src="images/drawings/IMG_3928 Small.jpeg" alt="Drawing 3928" onclick="showDescription('This is the story behind Drawing 3928.')">
+    <section class="section-box">
+        <h2>Echoes of the Mind</h2>
+        <img src="images/drawings/Overthinking.jpeg" alt="Overthinking" onclick="showDescription('Overthinking')">
+        <img src="images/drawings/drowning.jpeg" alt="Drowning" onclick="showDescription('Drowning')">
+        <img src="images/drawings/spleen.jpeg" alt="Spleen" onclick="showDescription('Spleen')">
+        <img src="images/drawings/incomplete.jpeg" alt="Incomplete" onclick="showDescription('Incomplete')">
+        <img src="images/drawings/hotmess.jpeg" alt="Hot Mess" onclick="showDescription('Hot Mess')">
+        <img src="images/drawings/weight.jpeg" alt="Weight" onclick="showDescription('Weight')">
+        
     </section>
 
-    <footer>
-        © 2025 Kenza's Art
-    </footer>
+    <section class="section-box">
+        <h2>Eyes</h2>
+        <img src="images/drawings/human.jpeg" alt="Human eye" onclick="showDescription('Human eye')">
+        <img src="images/drawings/eye_birds.jpeg" alt="Flying" onclick="showDescription('Flying')">
+        <img src="images/drawings/blue_eye.jpeg" alt="idk" onclick="showDescription('idk')">
+        <img src="images/drawings/bouma.jpeg" alt="Bouma" onclick="showDescription('Bouma')">
+        <img src="images/drawings/cat.jpeg" alt="Cat eye" onclick="showDescription('Cat eye')">
+        <img src="images/drawings/dragon.jpeg" alt="Dragon eye" onclick="showDescription('Dragon eye')">
 
+    </section>
+
+    <div style="text-align:center;">
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+
+    <footer>
+        © 2025 Art by Kenza
+    </footer>
     <script src="js/script.js"></script>
 
     <div id="modal">
