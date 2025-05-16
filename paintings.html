@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paintings - Kenza's Art</title>
+    <title>Paintings - Art by Kenza</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        .section-box {
+            background-color: #ffffff;
+            border: 2px solid #dddddd;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .section-box img {
+            max-width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section-box img:hover {
+            border-color: #999999;
+        }
+        .back-home {
+            background-color: #333333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f8f8f8;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Kenza's Art</h1>
+        <h1>Art by Kenza</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="drawings.html">Drawings</a>
@@ -17,22 +50,62 @@
         </nav>
     </header>
 
-    <section class="gallery">
-        <img src="images/paintings/painting1.jpg" alt="Painting 1" onclick="showDescription('This is Painting 1 description.')">
-        <img src="images/paintings/painting2.jpg" alt="Painting 2" onclick="showDescription('This is Painting 2 description.')">
+    <section class="section-box">
+        <h2>Veins of leaves</h2>
+        <img src="images/paintings/jellyfish.jpeg" alt="Jellyfish" onclick="showDescription('Jellyfish')">
+        <img src="images/paintings/butterflies.jpeg" alt="Butterflies" onclick="showDescription('Butterflies')">
+        <img src="images/paintings/nature.jpeg" alt="Nature" onclick="showDescription('Nature')">
+        <img src="images/paintings/waves.jpeg" alt="Waves" onclick="showDescription('Waves')">
+        <img src="images/paintings/fractals.jpeg" alt="Fractals" onclick="showDescription('Fractals')">
+        <img src="images/paintings/hope.jpeg" alt="Hope" onclick="showDescription('Hope')">
+    </section>
+    
+    <section class="section-box">
+        <h2>Life, death and in between </h2>
+        <img src="images/paintings/statue.jpeg" alt="statue" onclick="showDescription('statue')">
+        <img src="images/paintings/tired.jpeg" alt="tired" onclick="showDescription('tired')">
+        <img src="images/paintings/untitled.jpeg" alt="untitled" onclick="showDescription('untitled')">
+        <img src="images/paintings/van_gogh.jpeg" alt="Van Gogh's life" onclick="showDescription('Van Gogh's life')">
+        <img src="images/paintings/skull.jpeg" alt="skull" onclick="showDescription('skull')">
+        <img src="images/paintings/Cigarette.jpeg" alt="Cigarette" onclick="showDescription('Cigarette')">
+        <img src="images/paintings/skull_hat.jpeg" alt="Skull with a hat" onclick="showDescription('Skull with a hat')">
+        <img src="images/paintings/angel.jpeg" alt="Angel" onclick="showDescription('Angel')">
+        <img src="images/paintings/alive.jpeg" alt="Alive" onclick="showDescription('Alive')">
     </section>
 
+    <section class="section-box">
+        <h2>Landscapes</h2>
+        <img src="images/paintings/ballerina.jpeg" alt="Ballerina" onclick="showDescription('Ballerina')">
+        <img src="images/paintings/car_view.jpeg" alt="Car View" onclick="showDescription('Car View')">
+        <img src="images/paintings/mountains.jpeg" alt="mountains" onclick="showDescription('mountains')">
+        <img src="images/paintings/House.jpeg" alt="House" onclick="showDescription('House')">
+        <img src="images/paintings/sky_1.jpeg" alt="sky_1" onclick="showDescription('sky_1')">
+        <img src="images/paintings/sky_2.jpeg" alt="sky_2" onclick="showDescription('sky_2')">
+        <img src="images/paintings/sky_3.jpeg" alt="sky_3" onclick="showDescription('sky_3')">
+        <img src="images/paintings/sky_4.jpeg" alt="sky_4" onclick="showDescription('sky_'')">
+        <img src="images/paintings/Boat.jpeg" alt="Boat" onclick="showDescription('Boat')">
+        <img src="images/paintings/Trees.jpeg" alt="Trees" onclick="showDescription('Trees')">
+        <img src="images/paintings/Jar.jpeg" alt="Jar" onclick="showDescription('Jar')">
+        <img src="images/paintings/Road.jpeg" alt="Road" onclick="showDescription('Road')">
+        <img src="images/paintings/bled_aarbi.jpeg" alt="El Bled El Aarbi" onclick="showDescription('El Bled El Aarbi')">
+    </section>
+
+    <div style="text-align:center;">
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+
     <footer>
-        © 2025 Kenza's Art
+        © 2025 Art by Kenza
     </footer>
-
+    
     <script src="js/script.js"></script>
-
+    
     <div id="modal">
         <div id="modal-content">
             <span id="modal-close" onclick="closeModal()">&times;</span>
             <p id="modal-content-text"></p>
         </div>
     </div>
+    
 </body>
 </html>
