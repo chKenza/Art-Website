@@ -3,12 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Kenza's Art</title>
+    <title>Home - Art by Kenza</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('images/background_2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333333;
+        }
+
+        .homepage-box {
+            background-color: #ffffff;
+            border: 2px solid #dddddd;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .homepage-box img {
+            max-width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .homepage-box img:hover {
+            border-color: #999999;
+        }
+        .homepage-box a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #333333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f8f8f8;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Kenza's Art</h1>
+        <h1>Art by Kenza</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="drawings.html">Drawings</a>
@@ -17,22 +58,30 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to My Art World</h2>
-        <p>Explore my drawings and paintings.</p>
+    <section class="homepage-box">
+        <h2>Drawings</h2>
+        <img src="images/drawings/placeholder1.jpg" alt="Drawing Preview 1">
+        <img src="images/drawings/placeholder2.jpg" alt="Drawing Preview 2">
+        <p>Explore my collection of drawings in various styles.</p>
+        <a href="drawings.html">See Drawings</a>
+    </section>
+
+    <section class="homepage-box">
+        <h2>Paintings</h2>
+        <img src="images/paintings/placeholder1.jpg" alt="Painting Preview 1">
+        <img src="images/paintings/placeholder2.jpg" alt="Painting Preview 2">
+        <p>Discover my acrylic, aquarelle, and oil paintings.</p>
+        <a href="paintings.html">See Paintings</a>
+    </section>
+
+    <section class="homepage-box">
+        <h2>About</h2>
+        <p>Learn more about me and my artistic journey.</p>
+        <a href="about.html">Go to About</a>
     </section>
 
     <footer>
-        © 2025 Kenza's Art
+        © 2025 Art by Kenza
     </footer>
-
-    <script src="js/script.js"></script>
-    <!-- Modal -->
-    <div id="modal">
-        <div id="modal-content">
-            <span id="modal-close" onclick="closeModal()">&times;</span>
-            <p id="modal-content-text"></p>
-        </div>
-    </div>
 </body>
 </html>
