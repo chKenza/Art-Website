@@ -108,7 +108,7 @@ footer {
 
 header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .masonry-gallery {
@@ -146,7 +146,8 @@ header h1 {
 .header-logo {
     height: 2em;       /* Match the height of the text */
     vertical-align: middle;
-    margin-right: 10px; /* Small space between image & text */
+    margin-right: 0.5px;        /* tighter spacing */
+    margin-left: 0.5px;  
 }
 
 .modal-body {
