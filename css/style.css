@@ -169,3 +169,23 @@ header h1 {
     text-align: left;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* spacing between elements */
+  flex-wrap: nowrap;
+  font-size: 1.5em;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    font-size: 1.2em;        /* slightly smaller text */
+    gap: 4px;                /* reduce spacing between elements */
+  }
+
+  .header-logo {
+    height: 1.5em;           /* smaller butterflies */
+  }
+}
