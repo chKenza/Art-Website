@@ -168,3 +168,29 @@ header h1 {
     color: #333333;
     text-align: left;
 }
+
+.masonry-gallery {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.masonry-gallery img {
+  width: 100%;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 800px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+}
