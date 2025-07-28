@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
+    
+        body {
+            background-image: url('images/background_2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333333;
+        }
         .section-box {
             background-color: #ffffff;
             border: 2px solid #dddddd;
@@ -28,7 +36,7 @@
             border-color: #999999;
         }
         .back-home {
-            background-color: #333333;
+            background-color: #000000;
             padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
@@ -41,36 +49,126 @@
 </head>
 <body>
     <header>
-        <h1>Art by Kenza</h1>
+        <h1>
+            <img src="images/butterfly_left.png" alt="Logo" class="header-logo">
+            Art by Kenza
+            <img src="images/butterfly_right.png" alt="Logo" class="header-logo">
+        </h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="drawings.html">Drawings</a>
             <a href="paintings.html">Paintings</a>
-            <a href="about.html">About</a>
         </nav>
     </header>
 
     <section class="section-box">
         <h2>Echoes of the Mind</h2>
-        <img src="images/drawings/Overthinking.jpeg" alt="Overthinking" onclick="showDescription('Overthinking')">
-        <img src="images/drawings/drowning.jpeg" alt="Drowning" onclick="showDescription('Drowning')">
-        <img src="images/drawings/spleen.jpeg" alt="Spleen" onclick="showDescription('Spleen')">
-        <img src="images/drawings/incomplete.jpeg" alt="Incomplete" onclick="showDescription('Incomplete')">
-        <img src="images/drawings/hotmess.jpeg" alt="Hot Mess" onclick="showDescription('Hot Mess')">
-        <img src="images/drawings/weight.jpeg" alt="Weight" onclick="showDescription('Weight')">
-        
-    </section>
+        <div class="masonry-gallery">
+            <img src="images/drawings/Overthinking.jpeg" alt="Overthinking"
+                 onclick="showDescription('Overthinking', 'Ink on paper, A4', 'This ink drawing illustrates the torment of overthinking, a person haunted by their own inner demons, each one a manifestation of thought turned hostile. These figures erupt from the figure\’s own hand, a violent projection of the mind against itself. Fragmented, hollow, and afraid, the figure is left dismembered by their own creation, a victim of the very thoughts they cannot escape.', 'images/drawings/Overthinking.jpeg')">
+            
+            <img src="images/drawings/drowning.jpeg" alt="Drowning"
+                 onclick="showDescription('Drowning', 'Pencil on paper, A4', 'Everything seems so clear, until it takes a blurry shape. The sea dissolves into a grey-toned sky, and with it, your sense of self fades. You fall into a world where nothing is distinct, not even your own reflection. You\’re held, anchored, perhaps, but even in that embrace, you\’re drowning. This piece explores the quiet collapse of identity, the disorientation of emotional overwhelm, and the unsettling truth that sometimes, we vanish even while being held.', 'images/drawings/drowning.jpeg')">
+            
+            <img src="images/drawings/spleen.jpeg" alt="Spleen"
+                 onclick="showDescription('Spleen', 'Oil pastel on paper, A4', 'Having wings, yet remaining still. Holding a balloon, a symbol of joy, yet refusing to look at it. Surrounded by a storm, yet making no attempt to escape. This drawing evokes spleen, as described by Baudelaire, a paralyzing melancholy born from the sheer weight of existing. It captures the quiet contradiction of despair, when hope is within reach, but the will to grasp it is gone.', 'images/drawings/spleen.jpeg')">
+            
+            <img src="images/drawings/incomplete.jpeg" alt="Incomplete"
+                 onclick="showDescription('Incomplete', 'Pencil on paper', 'The drawing captures the ache of closeness that doesn’t quite heal the absence. The embrace is full, yet one figure fades, a reminder that even in connection, something can still feel missing. This piece reflects the human urge to seek completion in another, when in truth, the void we carry can only be filled from within.', 'images/drawings/incomplete.jpeg')">
+            
+            <img src="images/drawings/hotmess.jpeg" alt="Hot Mess"
+                 onclick="showDescription('Hot Mess', 'Pencil on paper', 'This drawing is a raw reflection of internal chaos, a moment where the mind feels tangled, heavy, and loud. The rough lines and shadowed figure capture a state of emotional overwhelm, where clarity slips away and all that\'s left is the weight of thought.', 'images/drawings/hotmess.jpeg')">
+            
+            <img src="images/drawings/heart_feather.jpeg" alt="Heart of Feather"
+                 onclick="showDescription('Heart of Feather', 'Pencil on paper', 'This piece draws inspiration from ancient Egyptian symbolism, the scale, the feather of Ma’at, and the human heart. At the center, the all-seeing eye hovers above the balance, invoking divine perception and truth. The heart and feather rest in opposing trays, echoing the mythic trial of the soul, where one\’s essence is weighed not against deeds, but against the purity of truth. It explores the tension between morality, emotion, and cosmic order, a silent reckoning between who we are and who we claim to be.', 'images/drawings/heart_feather.jpeg')">
 
+        </div>
+    </section>
+    
+    <section class="section-box">
+        <h2>Ethereal Lines</h2>
+        <div class="masonry-gallery">
+            <img src="images/drawings/tree_japanese.jpeg" alt="Path of Stillness"
+                 onclick="showDescription('Path of Stillness', 'Pencil on paper', 'This piece draws from Japanese aesthetics, where minimalism meets symbolism. A winding line flows like a river, gently wrapping around a bonsai-like tree. The red sun anchors the scene in tradition, while architectural forms create balance between nature and structure. Through soft gradients and curving forms, this drawing captures a meditative sense of movement, a stillness that drifts, like breath, within ethereal lines.', 'images/drawings/tree_japanese.jpeg')">
+            
+            <img src="images/drawings/butterfly_insect.jpeg" alt="Insecta"
+                 onclick="showDescription('Insecta', 'Pencil on paper', 'This drawing challenges the conventions of beauty by merging the forms of a butterfly and a spider, two creatures from the same world, yet judged through opposing lenses. The delicate symmetry and wing-like structures evoke elegance, while the central body hints at something unsettling, even arachnid. By blending grace with discomfort, the piece exposes our double standards: how instinct and perception distort what we deem beautiful or repellent. It invites the viewer to question why we fear one and adore the other, when both are simply nature\’s design.', 'images/drawings/butterfly_insect.jpeg')">
+            
+            <img src="images/drawings/flyin.jpeg" alt="Flyin"
+                 onclick="showDescription('Flying :)', 'Pencil on paper', 'Inspired by the cover of Flying :) by Tom Odell, this drawing captures the fragile stillness between longing and escape. The figure sits grounded, almost fading into the silence of blue surroundings, yet their shadow stretches behind them, not as a weight, but as wings. It suggests that flight isn\’t always motion; sometimes, it’s a quiet ache, a memory of freedom, or a hope not yet realized. The image speaks softly of restraint and the invisible pull of dreams that never quite lift us off the ground.', 'images/drawings/flyin.jpeg')">
+            
+            <img src="images/drawings/hands_wavy.jpeg" alt="Gravity Between Us"
+                 onclick="showDescription('Gravity Between Us', 'Pencil on paper', 'Two hands drift toward each other through warped space, their forms stretching and folding like time and memory. Their connection is suspended in a cosmic pull, not yet a touch, but an undeniable force drawing them together.', 'images/drawings/hands_wavy.jpeg')">
+            
+            <img src="images/drawings/girl_field.jpeg" alt="Where Light Once Fell"
+                 onclick="showDescription('Where Light Once Fell', 'Oil paster on paper', 'This piece captures a soft, dreamy moment in nature. The warm tones, blurred edges, and flowing dress create a sense of quiet beauty and lightness. Surrounded by greenery and dappled light, the figures blend into a peaceful, almost timeless atmosphere, like a memory you can’t quite place, but still want to return to.', 'images/drawings/girl_field.jpeg')">
+            
+            <img src="images/drawings/butterfly.jpeg" alt="Flight or Fall"
+                 onclick="showDescription('Flight or Fall', 'Watercolor on paper', 'This butterfly, rich in deep shades of blue and green, seems to unravel as it flies, its wings melting into delicate streams of color. The paint drips, blurring the lines between flight and fall. There\’s a quiet elegance in its motion, a sense of fragility suspended in time, as if even the most graceful forms can carry the weight of something unspoken.', 'images/drawings/butterfly.jpeg')">
+            
+            <img src="images/drawings/tree_moon.jpeg" alt="Threaded Branches"
+                 onclick="showDescription('Threaded Branches', 'Pencil on paper', 'What begins as scattered scribbles and intersecting lines slowly unfolds into a tree branch, delicate and surreal. It twists and grows, holding small buds and falling leaves. This piece celebrates the quiet beauty of unplanned form , how chaos can curve into nature, and how meaning can emerge from nothing more than a line.', 'images/drawings/tree_moon.jpeg')">
+            
+            <img src="images/drawings/just_keep_swimming.jpeg" alt="Just Keep Swimming"
+                 onclick="showDescription('Just Keep Swimming', 'Pencil on paper', 'Inspired by Dory\’s phrase from Finding Nemo (2003), this drawing is a quiet tribute to persistence. Two fish swim in soft, ethereal lines, their forms carried by waves that echo both calm and chaos. Life\’s current isn\’t always gentle, but this piece reminds us to keep moving, keep flowing, even when the path ahead is unclear. There is grace in endurance, and beauty in every stroke forward.', 'images/drawings/just_keep_swimming.jpeg')">
+            
+            <img src="images/drawings/girl_light.jpeg" alt="She Turned Toward the Light"
+                 onclick="showDescription('She Turned Toward the Light', 'Oil pastel on paper', 'This portrait glows with contrast, darkness meeting light in bold, expressive strokes. The figure gazes back, poised between shadow and illumination, her presence both strong and tender. Around her, the world blurs into color and movement, as if the moment itself is shifting. It’s a fleeting glimpse of someone caught mid-thought, mid-turn, facing the unknown, but not afraid of it.', 'images/drawings/girl_light.jpeg')">
+
+        </div>
+    </section>
+    
     <section class="section-box">
         <h2>Eyes</h2>
-        <img src="images/drawings/human.jpeg" alt="Human eye" onclick="showDescription('Human eye')">
-        <img src="images/drawings/eye_birds.jpeg" alt="Flying" onclick="showDescription('Flying')">
-        <img src="images/drawings/blue_eye.jpeg" alt="idk" onclick="showDescription('idk')">
-        <img src="images/drawings/bouma.jpeg" alt="Bouma" onclick="showDescription('Bouma')">
-        <img src="images/drawings/cat.jpeg" alt="Cat eye" onclick="showDescription('Cat eye')">
-        <img src="images/drawings/dragon.jpeg" alt="Dragon eye" onclick="showDescription('Dragon eye')">
+        <div class="masonry-gallery">
+            <img src="images/drawings/human.jpeg" alt="What We Hold"
+                 onclick="showDescription('What We Hold', 'Soft pastel on paper', 'The eye becomes a universe of its own, detailed, reflective, alive. Look closely, and you\'ll find petals blooming in the iris, as if nature and perception are one. The sunflower-like form suggests warmth in the gaze. This piece invites viewers to consider not just what we see, but the beauty we carry within.', 'images/drawings/human.jpeg')">
+            
+            <img src="images/drawings/eye_birds.jpeg" alt="Flying"
+                 onclick="showDescription('Flying', 'Pencil on paper, A5', 'Eyes and birds, both witness chaos, and yet they soar. Through life\’s unpredictable winds, they drift, torn and tested, chasing fragments of beauty scattered across the universe. The storms carve invisible trails, like the delicate lines of a cornea, binding the disarray into something whole. Fragile, yet determined, they rise from the turbulence, they fly.', 'images/drawings/eye_birds.jpeg')">
+            
+            <img src="images/drawings/blue_eye.jpeg" alt="Fractured Vision"
+                 onclick="showDescription('Fractured Vision', 'Pencil on paper', 'This eye stares out from a world that\'s breaking apart, its edges cracked, its lashes tangled with branches and flight. In the iris, a splash of vivid blue, a bird mid-motion, and a sense of something deeper trying to escape. This drawing reflects how fragile sight can be when shaped by pain, and how even under pressure, beauty still fights to emerge.', 'images/drawings/blue_eye.jpeg')">
+            
+            <img src="images/drawings/max_eye.jpeg" alt="Realistic Eye"
+                 onclick="showDescription('Realistic Eye', 'Soft pastel on paper', 'A detailed drawing of Max\'s eye.', 'images/drawings/max_eye.jpeg')">
+            
+            <img src="images/drawings/bouma.jpeg" alt="Bouma"
+                 onclick="showDescription('Bouma', 'Charcoal on paper', 'A charcoal study capturing the sharp, focused gaze of an owl.', 'images/drawings/bouma.jpeg')">
+            
+            <img src="images/drawings/cat.jpeg" alt="Cat Eye"
+                 onclick="showDescription('Cat Eye', 'Pencil on paper', 'A soft pencil drawing of a cat\’s eye, glowing with vivid blue, where the reflection of another cat, sitting by the window, quietly appears.', 'images/drawings/cat.jpeg')">
+            
+            <img src="images/drawings/dragon.jpeg" alt="Dragon Eye"
+                 onclick="showDescription('Dragon Eye', 'Pencil on paper', ' An intricate pencil drawing of a dragon\’s eye, where folds, textures, and reflections evoke both power and legend, as if the creature has seen centuries pass in a single stare.', 'images/drawings/dragon.jpeg')">
 
+        </div>
     </section>
+    
+    <section class="section-box">
+        <h2>Sassy Paws</h2>
+        <div class="masonry-gallery">
+            <img src="images/drawings/frog.jpeg" alt="Unbothered"
+                 onclick="showDescription('Unbothered', 'Pencil on paper', 'A laid-back frog lounges in a swirl of Japanese clouds, pipe in mouth and arms crossed.', 'images/drawings/frog.jpeg')">
+            
+            <img src="images/drawings/cat_noodles.jpeg" alt="Cat in Noodles"
+                 onclick="showDescription('Cat in Noodles', 'Pencil on paper', 'A cat dives into a bowl of ramen with joy and no restraint, multitasking with chopsticks in both paws.', 'images/drawings/cat_noodles.jpeg')">
+            
+            <img src="images/drawings/drunk_kitty.jpeg" alt="Wine \& Whiskers"
+                 onclick="showDescription('Wine \& Whiskers', 'Pencil on paper', 'This carefree kitty knows how to party, sprawled out with pizza, cheese, wine, and a belly full of treats.', 'images/drawings/drunk_kitty.jpeg')">
+            
+            <img src="images/drawings/cat_tattoo.jpeg" alt="Tattoo Time"
+                 onclick="showDescription('Tattoo Time', 'Ink on paper', 'A cat gives a tattoo to the other cat, surrounded by smoke and scattered cigarette butts.', 'images/drawings/cat_tattoo.jpeg')">
+            
+            <img src="images/drawings/dumbo.jpeg" alt="Dumbo"
+                 onclick="showDescription('Dumbo', 'Soft pastel on paper', 'High in the sky.', 'images/drawings/dumbo.jpeg')">
+            
+            <img src="images/drawings/totoro.jpeg" alt="Rainy Bus Stop"
+                 onclick="showDescription('Rainy Bus Stop', 'Soft pastel on paper', 'A tribute to My Neighbor Totoro, this drawing captures the comfort in silence.', 'images/drawings/totoro.jpeg')">
+
+        </div>
+    </section>
+
 
     <div style="text-align:center;">
         <a href="index.html" class="back-home">Back to Home</a>
@@ -84,8 +182,12 @@
     <div id="modal">
         <div id="modal-content">
             <span id="modal-close" onclick="closeModal()">&times;</span>
-            <p id="modal-content-text"></p>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Drawing">
+                <p id="modal-description"></p>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
