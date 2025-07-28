@@ -64,14 +64,14 @@ nav a:hover {
     text-align: center;
 }
 
+
 footer {
     text-align: center;
     padding: 1em;
     background-color: #000000;
     color: #f8f8f8;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    /* Remove position: fixed; */
 }
 
 /* Modal */
@@ -109,4 +109,61 @@ footer {
 header h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
+}
+
+.masonry-gallery {
+    column-count: 3;       /* Number of columns */
+    column-gap: 20px;      /* Space between columns */
+}
+
+.masonry-gallery img {
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;   /* Prevent image break in columns */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.big-image {
+    max-width: 400px; /* Bigger than default 250px */
+}
+
+.back-home {
+    background-color: #000000; /* pure black background */
+    color: #f8f8f8;            /* white text */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.back-home:hover {
+    background-color: #333333; /* slightly lighter on hover */
+}
+
+.header-logo {
+    height: 2em;       /* Match the height of the text */
+    vertical-align: middle;
+    margin-right: 10px; /* Small space between image & text */
+}
+
+.modal-body {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-image {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+#modal-description {
+    max-width: 50%;
+    font-size: 1.2em;
+    color: #333333;
+    text-align: left;
 }
