@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-image: url('images/background_2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333333;
+        }
         .section-box {
             background-color: #ffffff;
             border: 2px solid #dddddd;
@@ -28,7 +35,7 @@
             border-color: #999999;
         }
         .back-home {
-            background-color: #333333;
+            background-color: #000000;
             padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
@@ -41,54 +48,126 @@
 </head>
 <body>
     <header>
-        <h1>Art by Kenza</h1>
+        <h1>
+            <img src="images/butterfly_left.png" alt="Logo" class="header-logo">
+            Art by Kenza
+            <img src="images/butterfly_right.png" alt="Logo" class="header-logo">
+        </h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="drawings.html">Drawings</a>
             <a href="paintings.html">Paintings</a>
-            <a href="about.html">About</a>
         </nav>
     </header>
 
     <section class="section-box">
         <h2>Veins of leaves</h2>
-        <img src="images/paintings/jellyfish.jpeg" alt="Jellyfish" onclick="showDescription('Jellyfish')">
-        <img src="images/paintings/butterflies.jpeg" alt="Butterflies" onclick="showDescription('Butterflies')">
-        <img src="images/paintings/nature.jpeg" alt="Nature" onclick="showDescription('Nature')">
-        <img src="images/paintings/waves.jpeg" alt="Waves" onclick="showDescription('Waves')">
-        <img src="images/paintings/fractals.jpeg" alt="Fractals" onclick="showDescription('Fractals')">
-        <img src="images/paintings/hope.jpeg" alt="Hope" onclick="showDescription('Hope')">
+        <div class="masonry-gallery">
+            
+            <img src="images/paintings/jellyfish.jpeg" alt="Drift"
+                 onclick="showDescription('Drift', 'Oil on Canvas, 30x40 cm', 'Suspended in an underwater current, the human form moves with the grace of the jellyfish around her.This painting reflects on our shared rhythm with nature, where every pulse, breath, and movement echoes something older, deeper, and beautifully wild.', 'images/paintings/jellyfish.jpeg')">
+            
+            <img src="images/paintings/fractals.jpeg" alt="Fractals"
+                 onclick="showDescription('Fractals', 'Oil on Canvas, 20x30 cm', 'Unpredictable, strong, yet beautiful, waves, like eyes, hold mystery. In this painting, the iris becomes ocean, the pupil a storm. Calm lines spiral into crashing force, revealing how humans mirror nature: chaotic, layered, and impossible to fully grasp. A visual reflection of inner turbulence and raw emotional tide.', 'images/paintings/fractals.jpeg')">
+                 
+            
+            <img src="images/paintings/butterflies.jpeg" alt="Becoming"
+                 onclick="showDescription('Becoming', 'Oil on Canvas, 30x40 cm', 'In this painting, the boundary between woman and nature dissolves. Butterflies weave into her hair, becoming part of her, or perhaps she, part of them. This piece explores the quiet harmony between our bodies and the earth, where transformation is not an event, but a state of being.', 'images/paintings/butterflies.jpeg')">
+            
+            <img src="images/paintings/waves.jpeg" alt="Tide Within"
+                 onclick="showDescription('Tide Within', 'Oil on Canvas, 30x40 cm', 'A crashing wave overtakes half her face, swallowing her eye and revealing a small boat tossed in its current. The painting captures the emotional storm that lives inside, composed on the surface, yet turbulent beneath. Nature becomes a mirror for the self: unpredictable, powerful, and deeply human.', 'images/paintings/waves.jpeg')">
+            
+            <img src="images/paintings/nature.jpeg" alt="Bloom Within"
+                 onclick="showDescription('Bloom Within', 'Oil on Canvas, 20x30 cm', 'This painting represents the nature within oneself. A faceless figure merges with nature, flowers bloom, and a butterfly spreads its wings across the forehead like a crown. This painting speaks to inner metamorphosis, where identity is not fixed, but ever-growing, ever-blending with the wild. Nature is not just around her; it is her.', 'images/paintings/nature.jpeg')">
+            
+            <img src="images/paintings/hope.jpeg" alt="Hope" class="big-image"
+                 onclick="showDescription('Hope', 'Oil on Canvas, 50x60cm.', 'This dead-calm river winds through forgotten ruins, the remains of a life long gone. The land, faded and colorless, breathes sorrow, a forest of agony. And yet, in the heart of despair, a moon rises, casting gentle light. Red vines still cling to the stones. In the middle of it all, a boat cuts across the stillness, someone has come. Searching. For life. For hope.', 'images/paintings/hope.jpeg')">
+
+        </div>
     </section>
     
     <section class="section-box">
-        <h2>Life, death and in between </h2>
-        <img src="images/paintings/statue.jpeg" alt="statue" onclick="showDescription('statue')">
-        <img src="images/paintings/tired.jpeg" alt="tired" onclick="showDescription('tired')">
-        <img src="images/paintings/untitled.jpeg" alt="untitled" onclick="showDescription('untitled')">
-        <img src="images/paintings/van_gogh.jpeg" alt="Van Gogh's life" onclick="showDescription('Van Gogh's life')">
-        <img src="images/paintings/skull.jpeg" alt="skull" onclick="showDescription('skull')">
-        <img src="images/paintings/Cigarette.jpeg" alt="Cigarette" onclick="showDescription('Cigarette')">
-        <img src="images/paintings/skull_hat.jpeg" alt="Skull with a hat" onclick="showDescription('Skull with a hat')">
-        <img src="images/paintings/angel.jpeg" alt="Angel" onclick="showDescription('Angel')">
-        <img src="images/paintings/alive.jpeg" alt="Alive" onclick="showDescription('Alive')">
-    </section>
+        <h2>Life, death and in between</h2>
+        <div class="masonry-gallery">
+            <img src="images/paintings/statue.jpeg" alt="Fractured Beauty"
+                 onclick="showDescription('Fractured Beauty', 'Oil on canvas', 'This painting is a tribute to embracing flaws and finding beauty in brokenness. The marble statue, cracked and incomplete, evokes both fragility and resilience. It stands as a visual metaphor to not hide the damage, but to honor it. In this piece, the cracks become the centerpiece, the subtle flower blooming from a fracture suggests that even in what is damaged, life still dares to grow. Rather than seeing the broken as ruined, this work reclaims damage as a source of value, life, and depth. It reminds us that imperfection is not a flaw to conceal, but a truth to embrace, a record of what was endured, and what still remains.', 'images/paintings/statue.jpeg')">
+            
+            <img src="images/paintings/tired.jpeg" alt="Fading"
+                 onclick="showDescription('Fading', 'Watercolor on paper', 'This painting captures a silhouette of a person sitting in the metro, slowly dissolving into their surroundings. The figure seems to fade into the bench, as if drained by the weight of exhaustion and emotional burnout. With dark, dripping strokes and a blurred outline, it reflects the quiet erasure of self that fatigue can bring, a moment where identity blends into the noise and movement of daily life. It\'s a haunting image of being present physically, yet slowly disappearing mentally.', 'images/paintings/tired.jpeg')">
+            
+            <img src="images/paintings/untitled.jpeg" alt="Contemplation"
+                 onclick="showDescription('Contemplation', 'Oil on canvas', 'An old man cloaked in shadow sits in solitude, holding a skull in his hands. Through the cracked window behind him, a cemetery stretches into the distance beneath a turbulent sky. The graves, barely visible in the moonlight, echo the weight of his thoughts. The single melting candle on the windowsill is the only source of light, flickering against the overwhelming darkness. This painting speaks of death, memory, and reflection.', 'images/paintings/untitled.jpeg')">
+            
+            <img src="images/paintings/van_gogh.jpeg" alt="At Eternity\’s Gate"
+                 onclick="showDescription('At Eternity\’s Gate', 'Oil on Canvas 50x60 cm', 'This painting reimagines Van Gogh facing his own legacy. Dressed in his iconic blue, he stands before a canvas showing an aged, grieving version of himself, a nod to his work &quot;At Eternity\’s Gate.&quot; Behind him looms the stormy sky of &quot;Wheatfield with Crows.&quot; In his hand, a gun pointed downward doesn\’t fire bullets, but sunflowers, symbolizing that Van Gogh\’s true eternity lies not in his tragic end, but in the timeless beauty of his art.', 'images/paintings/van_gogh.jpeg')">
+            
+            <img src="images/paintings/skull.jpeg" alt="Skull of a skeleton with burning cigarette - Recreation"
+                 onclick="showDescription('Skull of a skeleton with burning cigarette - Recreation', 'Oil on Canvas, 20x30 cm', 'This piece is a recreation of Vincent van Gogh’\s  painting “Skull of a skeleton with burning cigarette”.', 'images/paintings/skull.jpeg')">
+            
+            <img src="images/paintings/Cigarette.jpeg" alt="Cigarette"
+                 onclick="showDescription('Cigarette', 'Watercolor on paper', 'A breath in, a cloud of smoke, and silence. Whitin a cigarette lies a fleeting escape, five minutes of stillness in a restless world. For a moment, stress fades, thoughts quiet down, and peace takes over. It\’s not about the smoke, but the pause it carves out of life.', 'images/paintings/Cigarette.jpeg')">
+            
+            <img src="images/paintings/skull_hat.jpeg" alt="Skull With a Hat"
+                 onclick="showDescription('Skull With a Hat', 'Watercolor on paper', 'This skull, crowned with a cowboy hat and wrapped in a worn bandana, captures a spirit who never truly dies.', 'images/paintings/skull_hat.jpeg')">
+            
+            <img src="images/paintings/angel.jpeg" alt="Angel"
+                 onclick="showDescription('Angel', 'Oil on Canvas, 50x70 cm', 'A reinterpretation of Roberto Ferri\’s Il Canto Della Vergine, this painting channels the same haunting stillness and surreal beauty. This painting speaks of lost purity, an angelic figure, collapsed under the weight of expectations. The sword, rooted in the chest, is not just pain, but pressure, from religion, from society, from the silent rules we\’re taught to obey. The blue birds hover, not as saviors, but as witnesses to a quiet surrender. It is a portrait of innocence undone by the very systems meant to protect it.', 'images/paintings/angel.jpeg')">
+            
+            
+            <img src="images/paintings/alive.jpeg" alt="Alive"
+                 onclick="showDescription('Alive', 'Oil on Paper, A4', 'Emerging from the depths, wrapped in waves and one another, two figures grasp for breath, for warmth, for life. Caught between drowning and desire, they hold on, not to land, but to each other.', 'images/paintings/alive.jpeg')">
+            
+            <img src="images/paintings/mirror.jpeg" alt="Reflections"
+                 onclick="showDescription('Reflections', 'Watercolor on paper', 'In the stillness of the moment, she turns inward. The mirror does not just reflect her form but her vulnerability, strength, and quiet beauty. This painting captures the gentle duality of being: the image we present and the soul we cradle in silence.', 'images/paintings/mirror.jpeg')">
 
+        </div>
+    </section>
+    
     <section class="section-box">
         <h2>Landscapes</h2>
-        <img src="images/paintings/ballerina.jpeg" alt="Ballerina" onclick="showDescription('Ballerina')">
-        <img src="images/paintings/car_view.jpeg" alt="Car View" onclick="showDescription('Car View')">
-        <img src="images/paintings/mountains.jpeg" alt="mountains" onclick="showDescription('mountains')">
-        <img src="images/paintings/House.jpeg" alt="House" onclick="showDescription('House')">
-        <img src="images/paintings/sky_1.jpeg" alt="sky_1" onclick="showDescription('sky_1')">
-        <img src="images/paintings/sky_2.jpeg" alt="sky_2" onclick="showDescription('sky_2')">
-        <img src="images/paintings/sky_3.jpeg" alt="sky_3" onclick="showDescription('sky_3')">
-        <img src="images/paintings/sky_4.jpeg" alt="sky_4" onclick="showDescription('sky_'')">
-        <img src="images/paintings/Boat.jpeg" alt="Boat" onclick="showDescription('Boat')">
-        <img src="images/paintings/Trees.jpeg" alt="Trees" onclick="showDescription('Trees')">
-        <img src="images/paintings/Jar.jpeg" alt="Jar" onclick="showDescription('Jar')">
-        <img src="images/paintings/Road.jpeg" alt="Road" onclick="showDescription('Road')">
-        <img src="images/paintings/bled_aarbi.jpeg" alt="El Bled El Aarbi" onclick="showDescription('El Bled El Aarbi')">
+        <div class="masonry-gallery">
+            <img src="images/paintings/ballerina.jpeg" alt="Ballerina"
+                 onclick="showDescription('Ballerina', 'Acrylic on canvas', 'A ballerina dances beneath a glowing moon, embraced by a forest of shadows and stars.', 'images/paintings/ballerina.jpeg')">
+            
+            <img src="images/paintings/car_view.jpeg" alt="Shattered Light onto the Windshield"
+                 onclick="showDescription('Shattered Light onto the Windshield', 'Watercolor on paper', 'A car speeds into the sunset, as light bursts through the windshield and scatters across the winding road ahead.', 'images/paintings/car_view.jpeg')">
+            
+            <img src="images/paintings/mountains.jpeg" alt="Mountains"
+                 onclick="showDescription('Mountains', 'Watercolor on paper', 'Mountain ranges blending into the sky.', 'images/paintings/mountains.jpeg')">
+            
+            <img src="images/paintings/House.jpeg" alt="Sunlit Entrance"
+                 onclick="showDescription('Sunlit Entrance', 'Watercolor on paper', 'A quiet doorway basking in warm afternoon light, framed by potted plants and textured stone.', 'images/paintings/House.jpeg')">
+            
+            <img src="images/paintings/sky_1.jpeg" alt="Sky Threads"
+                 onclick="showDescription('Sky Threads', 'Watercolor on paper', 'Power lines stretch across a glowing sky, stitching together the soft chaos of clouds.', 'images/paintings/sky_1.jpeg')">
+            
+            <img src="images/paintings/sky_2.jpeg" alt="Stillness Before the Light"
+                 onclick="showDescription('Stillness Before the Light', 'Watercolor on paper', 'Traffic lights hang motionless against a swirling evening sky, before the city stirs.', 'images/paintings/sky_2.jpeg')">
+            
+            <img src="images/paintings/sky_3.jpeg" alt="Skylines Entwined"
+                 onclick="showDescription('Skylines Entwined', 'Watercolor on paper', 'Telephone wires stretch like ink across a sky awash with soft greens, violets, and blues.', 'images/paintings/sky_3.jpeg')">
+            
+            <img src="images/paintings/sky_4.jpeg" alt="Dusk in Violet"
+                 onclick="showDescription('Dusk in Violet', 'Watercolor on paper', 'Power lines slice through a violet sky, holding the last light of day in quiet suspension.', 'images/paintings/sky_4.jpeg')">
+            
+            <img src="images/paintings/Boat.jpeg" alt="Tethered Stillness"
+                 onclick="showDescription('Tethered Stillness', 'Watercolor on paper', 'A boat rests quietly on rippling blue waters, anchored in tranquil solitude.', 'images/paintings/Boat.jpeg')">
+            
+            <img src="images/paintings/Trees.jpeg" alt="Evening Palms"
+                 onclick="showDescription('Evening Palms', 'Watercolor on paper', 'Two palm trees stand tall against a streaked and fading sunset sky.', 'images/paintings/Trees.jpeg')">
+            
+            <img src="images/paintings/Jar.jpeg" alt="Still Life in a Jar"
+                 onclick="showDescription('Still Life in a Jar', 'Watercolor on paper', 'A bundle of leaves and yellow blossoms rests in a glass jar.', 'images/paintings/Jar.jpeg')">
+            
+            <img src="images/paintings/Road.jpeg" alt="Bend in the Road"
+                 onclick="showDescription('Bend in the Road', 'Watercolor on paper', ' A winding path curves through golden foliage, leading into the tranquil hills beyond.', 'images/paintings/Road.jpeg')">
+            
+            <img src="images/paintings/bled_aarbi.jpeg" alt="Bled El Aarbi"
+                 onclick="showDescription('Bled El Aarbi', 'Watercolor on paper', 'A quiet street in the old Tunisian town awakens, as a woman in traditional safsari walks past a mosque.', 'images/paintings/bled_aarbi.jpeg')">
+
+        </div>
     </section>
+
 
     <div style="text-align:center;">
         <a href="index.html" class="back-home">Back to Home</a>
@@ -103,7 +182,10 @@
     <div id="modal">
         <div id="modal-content">
             <span id="modal-close" onclick="closeModal()">&times;</span>
-            <p id="modal-content-text"></p>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Drawing">
+                <p id="modal-description"></p>
+            </div>
         </div>
     </div>
     
