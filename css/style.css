@@ -108,7 +108,7 @@ footer {
 
 header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.3em;
+    font-size: 2.5em;
 }
 
 .masonry-gallery {
@@ -169,28 +169,3 @@ header h1 {
     text-align: left;
 }
 
-.masonry-gallery {
-  column-count: 3;
-  column-gap: 20px;
-}
-
-.masonry-gallery img {
-  width: 100%;
-  margin-bottom: 20px;
-  break-inside: avoid;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-
-@media (max-width: 800px) {
-  .masonry-gallery {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 500px) {
-  .masonry-gallery {
-    column-count: 1;
-  }
-}
