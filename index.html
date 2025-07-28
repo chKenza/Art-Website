@@ -38,7 +38,7 @@
         .homepage-box a {
             display: inline-block;
             margin-top: 20px;
-            background-color: #333333;
+            background-color: #000000;
             padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
@@ -49,39 +49,86 @@
 </head>
 <body>
     <header>
-        <h1>Art by Kenza</h1>
+        <h1>
+            <img src="images/butterfly_left.png" alt="Logo" class="header-logo">
+            Art by Kenza
+            <img src="images/butterfly_right.png" alt="Logo" class="header-logo">
+        </h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="drawings.html">Drawings</a>
             <a href="paintings.html">Paintings</a>
-            <a href="about.html">About</a>
         </nav>
     </header>
 
     <section class="homepage-box">
         <h2>Drawings</h2>
-        <img src="images/drawings/placeholder1.jpg" alt="Drawing Preview 1">
-        <img src="images/drawings/placeholder2.jpg" alt="Drawing Preview 2">
-        <p>Explore my collection of drawings in various styles.</p>
+        <div class="masonry-gallery">
+            <img src="images/drawings/hands_wavy.jpeg" alt="Gravity Between Us"
+                 onclick="showDescription('Gravity Between Us', 'Pencil on paper', 'Two hands drift toward each other through warped space, their forms stretching and folding like time and memory. Their connection is suspended in a cosmic pull, not yet a touch, but an undeniable force drawing them together.', 'images/drawings/hands_wavy.jpeg')">
+                 
+            <img src="images/drawings/eye_birds.jpeg" alt="Flying"
+                 onclick="showDescription('Flying', 'Pencil on paper, A5', 'Eyes and birds, both witness chaos, and yet they soar. Through life\’s unpredictable winds, they drift, torn and tested, chasing fragments of beauty scattered across the universe. The storms carve invisible trails, like the delicate lines of a cornea, binding the disarray into something whole. Fragile, yet determined, they rise from the turbulence, they fly.', 'images/drawings/eye_birds.jpeg')">
+            
+           <img src="images/drawings/girl_light.jpeg" alt="She Turned Toward the Light"
+                onclick="showDescription('She Turned Toward the Light', 'Oil pastel on paper', 'This portrait glows with contrast, darkness meeting light in bold, expressive strokes. The figure gazes back, poised between shadow and illumination, her presence both strong and tender. Around her, the world blurs into color and movement, as if the moment itself is shifting. It’s a fleeting glimpse of someone caught mid-thought, mid-turn, facing the unknown, but not afraid of it.', 'images/drawings/girl_light.jpeg')">
+ 
+            <img src="images/drawings/drowning.jpeg" alt="Drowning"
+                 onclick="showDescription('Drowning', 'Pencil on paper, A4', 'Everything seems so clear, until it takes a blurry shape. The sea dissolves into a grey-toned sky, and with it, your sense of self fades. You fall into a world where nothing is distinct, not even your own reflection. You\’re held, anchored, perhaps, but even in that embrace, you\’re drowning. This piece explores the quiet collapse of identity, the disorientation of emotional overwhelm, and the unsettling truth that sometimes, we vanish even while being held.', 'images/drawings/drowning.jpeg')">
+            
+            <img src="images/drawings/drunk_kitty.jpeg" alt="Wine \& Whiskers"
+                 onclick="showDescription('Wine \& Whiskers', 'Pencil on paper', 'This carefree kitty knows how to party, sprawled out with pizza, cheese, wine, and a belly full of treats.', 'images/drawings/drunk_kitty.jpeg')">
+            
+           <img src="images/drawings/Overthinking.jpeg" alt="Overthinking"
+                onclick="showDescription('Overthinking', 'Ink on paper, A4', 'This ink drawing illustrates the torment of overthinking, a person haunted by their own inner demons, each one a manifestation of thought turned hostile. These figures erupt from the figure\’s own hand, a violent projection of the mind against itself. Fragmented, hollow, and afraid, the figure is left dismembered by their own creation, a victim of the very thoughts they cannot escape.', 'images/drawings/Overthinking.jpeg')">
+           
+        </div>
+        <p>Explore my collection of drawings.</p>
         <a href="drawings.html">See Drawings</a>
     </section>
-
+    
     <section class="homepage-box">
         <h2>Paintings</h2>
-        <img src="images/paintings/placeholder1.jpg" alt="Painting Preview 1">
-        <img src="images/paintings/placeholder2.jpg" alt="Painting Preview 2">
+        <div class="masonry-gallery">
+            <img src="images/paintings/van_gogh.jpeg" alt="At Eternity\’s Gate"
+                 onclick="showDescription('At Eternity\’s Gate', 'Oil on Canvas 50x60 cm', 'This painting reimagines Van Gogh facing his own legacy. Dressed in his iconic blue, he stands before a canvas showing an aged, grieving version of himself, a nod to his work &quot;At Eternity\’s Gate.&quot; Behind him looms the stormy sky of &quot;Wheatfield with Crows.&quot; In his hand, a gun pointed downward doesn\’t fire bullets, but sunflowers, symbolizing that Van Gogh\’s true eternity lies not in his tragic end, but in the timeless beauty of his art.', 'images/paintings/van_gogh.jpeg')">
+            
+            <img src="images/paintings/Cigarette.jpeg" alt="Cigarette"
+                 onclick="showDescription('Cigarette', 'Watercolor on paper', 'A breath in, a cloud of smoke, and silence. Whitin a cigarette lies a fleeting escape, five minutes of stillness in a restless world. For a moment, stress fades, thoughts quiet down, and peace takes over. It\’s not about the smoke, but the pause it carves out of life.', 'images/paintings/Cigarette.jpeg')">
+            
+            <img src="images/paintings/tired.jpeg" alt="Fading"
+                 onclick="showDescription('Fading', 'Watercolor on paper', 'This painting captures a silhouette of a person sitting in the metro, slowly dissolving into their surroundings. The figure seems to fade into the bench, as if drained by the weight of exhaustion and emotional burnout. With dark, dripping strokes and a blurred outline, it reflects the quiet erasure of self that fatigue can bring, a moment where identity blends into the noise and movement of daily life. It\'s a haunting image of being present physically, yet slowly disappearing mentally.', 'images/paintings/tired.jpeg')">
+            
+            <img src="images/paintings/jellyfish.jpeg" alt="Drift"
+                 onclick="showDescription('Drift', 'Oil on Canvas, 30x40 cm', 'Suspended in an underwater current, the human form moves with the grace of the jellyfish around her.This painting reflects on our shared rhythm with nature, where every pulse, breath, and movement echoes something older, deeper, and beautifully wild.', 'images/paintings/jellyfish.jpeg')">
+            
+            <img src="images/paintings/car_view.jpeg" alt="Shattered Light onto the Windshield"
+                 onclick="showDescription('Shattered Light onto the Windshield', 'Watercolor on paper', 'A car speeds into the sunset, as light bursts through the windshield and scatters across the winding road ahead.', 'images/paintings/car_view.jpeg')">
+            
+            <img src="images/paintings/nature.jpeg" alt="Bloom Within"
+                 onclick="showDescription('Bloom Within', 'Oil on Canvas, 20x30 cm', 'This painting represents the nature within oneself. A faceless figure merges with nature, flowers bloom, and a butterfly spreads its wings across the forehead like a crown. This painting speaks to inner metamorphosis, where identity is not fixed, but ever-growing, ever-blending with the wild. Nature is not just around her; it is her.', 'images/paintings/nature.jpeg')">
+            
+        </div>
         <p>Discover my acrylic, aquarelle, and oil paintings.</p>
         <a href="paintings.html">See Paintings</a>
     </section>
 
-    <section class="homepage-box">
-        <h2>About</h2>
-        <p>Learn more about me and my artistic journey.</p>
-        <a href="about.html">Go to About</a>
-    </section>
+
 
     <footer>
         © 2025 Art by Kenza
     </footer>
+    
+    <script src="js/script.js"></script>
+    
+    <div id="modal">
+        <div id="modal-content">
+            <span id="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Drawing">
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
