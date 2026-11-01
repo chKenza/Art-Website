@@ -3,134 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Art by Kenza</title>
+    <title>Art by Kenza</title>
+    <meta name="description" content="Drawings and paintings by Kenza.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Dancing+Script:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('images/background_2.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #333333;
-        }
-
-        .homepage-box {
-            background-color: #ffffff;
-            border: 2px solid #dddddd;
-            border-radius: 15px;
-            padding: 30px;
-            margin: 30px auto;
-            max-width: 900px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-        .homepage-box img {
-            max-width: 250px;
-            margin: 10px;
-            border-radius: 10px;
-            border: 4px solid #ffffff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        .homepage-box img:hover {
-            border-color: #999999;
-        }
-        .homepage-box a {
-            display: inline-block;
-            margin-top: 20px;
-            background-color: #000000;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            color: #f8f8f8;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="icon" href="images/butterfly_left_small.png">
 </head>
 <body>
-    <header>
-        <h1>
-            <div class="header-content">
-                <img src="images/butterfly_left.png" alt="Logo" class="header-logo">
-                Art by Kenza
-                <img src="images/butterfly_right.png" alt="Logo" class="header-logo">
-            </div>
+    <header class="site-header">
+        <h1 class="brand">
+            <img src="images/butterfly_left_small.png" alt="" width="80" height="80">
+            <a href="index.html">Art by Kenza</a>
+            <img src="images/butterfly_right_small.png" alt="" width="80" height="80">
         </h1>
-        <nav>
-            <a href="index.html">Home</a>
+        <nav class="site-nav">
+            <a href="index.html" aria-current="page">Home</a>
             <a href="drawings.html">Drawings</a>
             <a href="paintings.html">Paintings</a>
         </nav>
     </header>
 
-    <section class="homepage-box">
-        <h2>Drawings</h2>
-        <div class="masonry-gallery">
-            <img src="images/drawings/hands_wavy.jpeg" alt="Gravity Between Us"
-                 onclick="showDescription('Gravity Between Us', 'Pencil on paper', 'Two hands drift toward each other through warped space, their forms stretching and folding. Their connection is suspended in a cosmic pull, not yet a touch, but an undeniable force drawing them together.', 'images/drawings/hands_wavy.jpeg')">
-                 
-            <img src="images/drawings/eye_birds.jpeg" alt="Flying"
-                 onclick="showDescription('Flying', 'Pencil on paper, A5', 'Eyes and birds, both witness chaos, and yet they soar. Through life\’s unpredictable winds, they drift, torn and tested, chasing fragments of beauty scattered across the universe. The storms carve invisible trails, like the delicate lines of a cornea, binding the disarray into something whole. Fragile, yet determined, they rise from the turbulence, they fly.', 'images/drawings/eye_birds.jpeg')">
-            
-           <img src="images/drawings/girl_light.jpeg" alt="She Turned Toward the Light"
-                onclick="showDescription('She Turned Toward the Light', 'Oil pastel on paper', 'This portrait glows with contrast, darkness meeting light, in bold and expressive strokes.. The figure gazes back, poised between shadow and illumination, her presence both strong and tender. Around her, the world blurs into color and movement, as if the moment itself is shifting. It’s a fleeting glimpse of someone caught mid-thought, mid-turn, facing the unknown, but not afraid of it.', 'images/drawings/girl_light.jpeg')">
- 
-            <img src="images/drawings/drowning.jpeg" alt="Drowning"
-                 onclick="showDescription('Drowning', 'Pencil on paper, A4', 'Everything seems so clear, until it takes a blurry shape. The sea dissolves into a grey-toned sky, and with it, your sense of self fades. You fall into a world where nothing is distinct, not even your own reflection. You\’re held, anchored, perhaps, but even in that embrace, you\’re drowning. This piece explores the quiet collapse of identity, the disorientation of emotional overwhelm, and the unsettling truth that sometimes, we vanish even while being held.', 'images/drawings/drowning.jpeg')">
-            
-            <img src="images/drawings/drunk_kitty.jpeg" alt="Wine \& Whiskers"
-                 onclick="showDescription('Wine \& Whiskers', 'Pencil on paper', 'This carefree kitty knows how to party, sprawled out with pizza, cheese, wine, and a belly full of treats.', 'images/drawings/drunk_kitty.jpeg')">
-            
-           <img src="images/drawings/overthinking.jpeg" alt="Overthinking"
-                onclick="showDescription('Overthinking', 'Ink on paper, A4', 'This ink drawing illustrates the torment of overthinking, a person haunted by their own inner demons, each one a manifestation of thought turned hostile. These figures erupt from the figure\’s own hand, a violent projection of the mind against itself. Fragmented, hollow, and afraid, the figure is left dismembered by their own creation, a victim of the very thoughts they cannot escape.', 'images/drawings/overthinking.jpeg')">
-           
+    <main>
+        <section class="intro">
+            <p class="eyebrow">welcome to</p>
+            <h2>My Gallery</h2>
+            <p class="mediums">Drawings <i>&amp;</i> Paintings</p>
+        </section>
+
+        <section class="series">
+            <header class="series-header">
+                <h2>Drawings</h2>
+                <p>Explore my collection of drawings.</p>
+            </header>
+        <div class="gallery">
+            <button class="art" type="button" style="--ar: 0.715"
+                    data-title="Gravity Between Us"
+                    data-technique="Pencil on paper"
+                    data-full="images/drawings/large/gravity_between_us.webp"
+                    data-description="Two hands drift toward each other through warped space, their forms stretching and folding like time and memory. Their connection is suspended in a cosmic pull, not yet a touch, but an undeniable force drawing them together.">
+                <span class="art-frame"><img src="images/drawings/thumbs/gravity_between_us.webp" alt="Gravity Between Us" width="720" height="1007" loading="eager" decoding="async"></span>
+                <span class="art-title">Gravity Between Us</span>
+            </button>
+            <button class="art" type="button" style="--ar: 1.285"
+                    data-title="Flying"
+                    data-technique="Pencil on paper, A5"
+                    data-full="images/drawings/large/flying_birds.webp"
+                    data-description="Eyes and birds, both witness chaos, and yet they soar. Through life’s unpredictable winds, they drift, torn and tested, chasing fragments of beauty scattered across the universe. The storms carve invisible trails, like the delicate lines of a cornea, binding the disarray into something whole. Fragile, yet determined, they rise from the turbulence, they fly.">
+                <span class="art-frame"><img src="images/drawings/thumbs/flying_birds.webp" alt="Flying" width="320" height="249" loading="eager" decoding="async"></span>
+                <span class="art-title">Flying</span>
+            </button>
+            <button class="art" type="button" style="--ar: 1.478"
+                    data-title="She Turned Toward the Light"
+                    data-technique="Oil pastel on paper"
+                    data-full="images/drawings/large/she_turned_toward_the_light.webp"
+                    data-description="This portrait glows with contrast, darkness meeting light in bold, expressive strokes. The figure gazes back, poised between shadow and illumination, her presence both strong and tender. Around her, the world blurs into color and movement, as if the moment itself is shifting. It’s a fleeting glimpse of someone caught mid-thought, mid-turn, facing the unknown, but not afraid of it.">
+                <span class="art-frame"><img src="images/drawings/thumbs/she_turned_toward_the_light.webp" alt="She Turned Toward the Light" width="1064" height="720" loading="eager" decoding="async"></span>
+                <span class="art-title">She Turned Toward the Light</span>
+            </button>
+            <button class="art" type="button" style="--ar: 0.750"
+                    data-title="Drowning"
+                    data-technique="Pencil on paper, A4"
+                    data-full="images/drawings/large/drowning.webp"
+                    data-description="Everything seems so clear, until it takes a blurry shape. The sea dissolves into a grey-toned sky, and with it, your sense of self fades. You fall into a world where nothing is distinct, not even your own reflection. You’re held, anchored, perhaps, but even in that embrace, you’re drowning. This piece explores the quiet collapse of identity, the disorientation of emotional overwhelm, and the unsettling truth that sometimes, we vanish even while being held.">
+                <span class="art-frame"><img src="images/drawings/thumbs/drowning.webp" alt="Drowning" width="240" height="320" loading="eager" decoding="async"></span>
+                <span class="art-title">Drowning</span>
+            </button>
+            <button class="art" type="button" style="--ar: 1.000"
+                    data-title="Wine &amp; Whiskers"
+                    data-technique="Pencil on paper"
+                    data-full="images/drawings/large/wine_and_whiskers.webp"
+                    data-description="This carefree kitty knows how to party, sprawled out with pizza, cheese, wine, and a belly full of treats.">
+                <span class="art-frame"><img src="images/drawings/thumbs/wine_and_whiskers.webp" alt="Wine &amp; Whiskers" width="720" height="720" loading="lazy" decoding="async"></span>
+                <span class="art-title">Wine &amp; Whiskers</span>
+            </button>
+            <button class="art" type="button" style="--ar: 0.765"
+                    data-title="Overthinking"
+                    data-technique="Ink on paper, A4"
+                    data-full="images/drawings/large/overthinking.webp"
+                    data-description="This ink drawing illustrates the torment of overthinking, a person haunted by their own inner demons, each one a manifestation of thought turned hostile. These figures erupt from the figure’s own hand, a violent projection of the mind against itself. Fragmented, hollow, and afraid, the figure is left dismembered by their own creation, a victim of the very thoughts they cannot escape.">
+                <span class="art-frame"><img src="images/drawings/thumbs/overthinking.webp" alt="Overthinking" width="720" height="941" loading="lazy" decoding="async"></span>
+                <span class="art-title">Overthinking</span>
+            </button>
         </div>
-        <p>Explore my collection of pastel, ink, and pencil drawings:</p>
-        <a href="drawings.html">See Drawings</a>
-    </section>
-    
-    <section class="homepage-box">
-        <h2>Paintings</h2>
-        <div class="masonry-gallery">
-            <img src="images/paintings/van_gogh.jpeg" alt="At Eternity\’s Gate"
-                 onclick="showDescription('At Eternity\’s Gate', 'Oil on Canvas 50x60 cm', 'This painting reimagines Van Gogh facing his own legacy. Dressed in his iconic blue, he stands before a canvas showing an aged, grieving version of himself, a nod to his work &quot;At Eternity\’s Gate.&quot; Behind him looms the stormy sky of &quot;Wheatfield with Crows.&quot; In his hand, a gun pointed downward doesn\’t fire bullets, but sunflowers, symbolizing that Van Gogh\’s true eternity lies not in his tragic end, but in the timeless beauty of his art.', 'images/paintings/van_gogh.jpeg')">
-            
-            <img src="images/paintings/Cigarette.jpeg" alt="Cigarette"
-                 onclick="showDescription('Cigarette', 'Watercolor on paper', 'A breath in, a cloud of smoke, and silence. Whitin a cigarette lies a fleeting escape, five minutes of stillness in a restless world. For a moment, stress fades, thoughts quiet down, and peace takes over. It\’s not about the smoke, but the pause it carves out of life.', 'images/paintings/Cigarette.jpeg')">
-            
-            <img src="images/paintings/tired.jpeg" alt="Fading"
-                 onclick="showDescription('Fading', 'Watercolor on paper', 'This painting captures a silhouette of a person sitting in the metro, slowly dissolving into their surroundings. The figure seems to fade into the bench, as if drained by the weight of exhaustion and emotional burnout. With dark, dripping strokes and a blurred outline, it reflects the quiet erasure of self that fatigue can bring, a moment where identity blends into the noise and movement of daily life. It\'s a haunting image of being present physically, yet slowly disappearing mentally.', 'images/paintings/tired.jpeg')">
-            
-            <img src="images/paintings/jellyfish.jpeg" alt="Drift"
-                 onclick="showDescription('Drift', 'Oil on Canvas, 30x40 cm', 'Suspended in an underwater current, the human form moves with the grace of the jellyfish around her.This painting reflects on our shared rhythm with nature, where every pulse, breath, and movement echoes something older, deeper, and beautifully wild.', 'images/paintings/jellyfish.jpeg')">
-            
-            <img src="images/paintings/car_view.jpeg" alt="Shattered Light onto the Windshield"
-                 onclick="showDescription('Shattered Light onto the Windshield', 'Watercolor on paper', 'A car speeds into the sunset, as light bursts through the windshield and scatters across the winding road ahead.', 'images/paintings/car_view.jpeg')">
-            
-            <img src="images/paintings/nature.jpeg" alt="Bloom Within"
-                 onclick="showDescription('Bloom Within', 'Oil on Canvas, 20x30 cm', 'This painting represents the nature within oneself. A faceless figure merges with nature, flowers bloom, and a butterfly spreads its wings across the forehead like a crown. This painting speaks to inner metamorphosis, where identity is not fixed, but ever-growing, ever-blending with the wild. Nature is not just around her; it is her.', 'images/paintings/nature.jpeg')">
-            
+            <div class="series-footer"><a class="button" href="drawings.html">See all drawings</a></div>
+        </section>
+
+        <section class="series">
+            <header class="series-header">
+                <h2>Paintings</h2>
+                <p>Discover my acrylic, aquarelle, and oil paintings.</p>
+            </header>
+        <div class="gallery">
+            <button class="art" type="button" style="--ar: 0.832"
+                    data-title="At Eternity’s Gate"
+                    data-technique="Oil on Canvas 50x60 cm"
+                    data-full="images/paintings/large/at_eternitys_gate.webp"
+                    data-description="This painting reimagines Van Gogh facing his own legacy. Dressed in his iconic blue, he stands before a canvas showing an aged, grieving version of himself, a nod to his work &quot;At Eternity’s Gate.&quot; Behind him looms the stormy sky of &quot;Wheatfield with Crows.&quot; In his hand, a gun pointed downward doesn’t fire bullets, but sunflowers, symbolizing that Van Gogh’s true eternity lies not in his tragic end, but in the timeless beauty of his art.">
+                <span class="art-frame"><img src="images/paintings/thumbs/at_eternitys_gate.webp" alt="At Eternity’s Gate" width="720" height="865" loading="lazy" decoding="async"></span>
+                <span class="art-title">At Eternity’s Gate</span>
+            </button>
+            <button class="art" type="button" style="--ar: 0.827"
+                    data-title="Cigarette"
+                    data-technique="Watercolor on paper"
+                    data-full="images/paintings/large/cigarette.webp"
+                    data-description="A breath in, a cloud of smoke, and silence. Whitin a cigarette lies a fleeting escape, five minutes of stillness in a restless world. For a moment, stress fades, thoughts quiet down, and peace takes over. It’s not about the smoke, but the pause it carves out of life.">
+                <span class="art-frame"><img src="images/paintings/thumbs/cigarette.webp" alt="Cigarette" width="720" height="871" loading="lazy" decoding="async"></span>
+                <span class="art-title">Cigarette</span>
+            </button>
+            <button class="art" type="button" style="--ar: 0.844"
+                    data-title="Fading"
+                    data-technique="Watercolor on paper"
+                    data-full="images/paintings/large/fading.webp"
+                    data-description="This painting captures a silhouette of a person sitting in the metro, slowly dissolving into their surroundings. The figure seems to fade into the bench, as if drained by the weight of exhaustion and emotional burnout. With dark, dripping strokes and a blurred outline, it reflects the quiet erasure of self that fatigue can bring, a moment where identity blends into the noise and movement of daily life. It&#x27;s a haunting image of being present physically, yet slowly disappearing mentally.">
+                <span class="art-frame"><img src="images/paintings/thumbs/fading.webp" alt="Fading" width="720" height="853" loading="lazy" decoding="async"></span>
+                <span class="art-title">Fading</span>
+            </button>
+            <button class="art" type="button" style="--ar: 0.756"
+                    data-title="Drift"
+                    data-technique="Oil on Canvas, 30x40 cm"
+                    data-full="images/paintings/large/drift.webp"
+                    data-description="Suspended in an underwater current, the human form moves with the grace of the jellyfish around her.This painting reflects on our shared rhythm with nature, where every pulse, breath, and movement echoes something older, deeper, and beautifully wild.">
+                <span class="art-frame"><img src="images/paintings/thumbs/drift.webp" alt="Drift" width="720" height="952" loading="lazy" decoding="async"></span>
+                <span class="art-title">Drift</span>
+            </button>
+            <button class="art" type="button" style="--ar: 1.336"
+                    data-title="Shattered Light onto the Windshield"
+                    data-technique="Watercolor on paper"
+                    data-full="images/paintings/large/shattered_light_onto_the_windshield.webp"
+                    data-description="A car speeds into the sunset, as light bursts through the windshield and scatters across the winding road ahead.">
+                <span class="art-frame"><img src="images/paintings/thumbs/shattered_light_onto_the_windshield.webp" alt="Shattered Light onto the Windshield" width="962" height="720" loading="lazy" decoding="async"></span>
+                <span class="art-title">Shattered Light onto the Windshield</span>
+            </button>
+            <button class="art" type="button" style="--ar: 0.643"
+                    data-title="Bloom Within"
+                    data-technique="Oil on Canvas, 20x30 cm"
+                    data-full="images/paintings/large/bloom_within.webp"
+                    data-description="This painting represents the nature within oneself. A faceless figure merges with nature, flowers bloom, and a butterfly spreads its wings across the forehead like a crown. This painting speaks to inner metamorphosis, where identity is not fixed, but ever-growing, ever-blending with the wild. Nature is not just around her; it is her.">
+                <span class="art-frame"><img src="images/paintings/thumbs/bloom_within.webp" alt="Bloom Within" width="720" height="1120" loading="lazy" decoding="async"></span>
+                <span class="art-title">Bloom Within</span>
+            </button>
         </div>
-        <p>Discover my acrylic, watercolor, and oil paintings:</p>
-        <a href="paintings.html">See Paintings</a>
-    </section>
+            <div class="series-footer"><a class="button" href="paintings.html">See all paintings</a></div>
+        </section>
+    </main>
 
-
-
-    <footer>
-        © 2025 Art by Kenza
+    <footer class="site-footer">
+        <img src="images/butterfly_left_small.png" alt="" width="28" height="28">
+        <span>© 2025 Art by Kenza</span>
+        <img src="images/butterfly_right_small.png" alt="" width="28" height="28">
     </footer>
-    
-    <script src="js/script.js"></script>
-    
-    <div id="modal">
-        <div id="modal-content">
-            <span id="modal-close" onclick="closeModal()">&times;</span>
-            <div class="modal-body">
-                <img id="modal-image" src="" alt="Drawing">
-                <p id="modal-description"></p>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <button class="lightbox-btn lightbox-close" type="button" aria-label="Close">&times;</button>
+        <button class="lightbox-btn lightbox-prev" type="button" aria-label="Previous">&#8249;</button>
+        <button class="lightbox-btn lightbox-next" type="button" aria-label="Next">&#8250;</button>
+        <div class="lightbox-panel">
+            <div class="lightbox-media"><img id="lightbox-image" alt=""></div>
+            <div class="lightbox-text">
+                <h3 id="lightbox-title"></h3>
+                <p class="lightbox-technique" id="lightbox-technique"></p>
+                <p class="lightbox-description" id="lightbox-description"></p>
             </div>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
