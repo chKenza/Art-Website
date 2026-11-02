@@ -286,6 +286,15 @@ img { max-width: 100%; display: block; }
 
 .page-end { text-align: center; margin: 0 0 64px; }
 
+/* ---------- Contact ---------- */
+.contact p {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+    color: var(--ink-soft);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
     display: flex;
